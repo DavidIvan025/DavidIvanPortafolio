@@ -1,0 +1,21 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/fork-awesome/1.2.0/css/fork-awesome.min.css");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Header Section */
+
+/* Footer Section */
+@layer components{
+ .footer-top{
+    @apply min-h-screen p-8;
+ }
+
+ .footer-icons {
+   @apply mx-1 w-12 h-12 text-black flex shrink-0;
+ }
+ i.fa {
+   @apply text-2xl;
+ }
+}
