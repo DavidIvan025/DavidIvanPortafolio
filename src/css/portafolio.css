@@ -1,0 +1,80 @@
+/* @import url("https://cdnjs.cloudflare.com/ajax/libs/fork-awesome/1.2.0/css/fork-awesome.min.css");
+*Ex-Main page changed for the portafolio*
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply max-w-none;
+  }
+}
+
+
+@layer components {
+  .container-list {
+    @apply text-center -mx-5 md:mx-0;
+  }
+
+  .container-list li {
+    @apply inline-block mx-5;
+  }
+
+  
+  .main-container {
+    font-family: Cambria;
+    background-color: rgb(113 113 122);
+    color: rgb(255 255 255);
+  }
+  .wrapper{
+    @apply bg-slate-700;
+  }
+
+  .card {
+    @apply bg-gray-600 mt-2 p-12 h-48 w-40 text-center rounded-lg;
+  }
+
+  .card img {
+    width: 50px;
+    height: 50px;
+  }
+
+  figcaption {
+    @apply bg-gray-800 bg-opacity-60 text-white p-4;
+    opacity: 0;
+    transition: all .2s ease-in-out;
+  }
+
+  .folios{
+    @apply flex flex-col justify-center;
+  }
+
+  .folios button {
+    @apply bg-amber-300 text-gray-800 rounded-md w-[6rem];
+  }
+
+  figcaption:hover{
+    opacity: 1;
+    transition: all .2s ease-in-out;
+  }
+
+  
+  .footer-container {
+    background-color: rgb(44, 70, 105);
+    @apply max-w-none;
+
+  }
+
+  .footer-top {
+    @apply min-h-screen p-8;
+  }
+
+  .footer-icons {
+    @apply mx-1 w-12 h-12 text-black flex shrink-0;
+  }
+
+  i.fa {
+    @apply text-2xl;
+  }
+} */
