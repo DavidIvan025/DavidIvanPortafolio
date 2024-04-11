@@ -1,0 +1,23 @@
+.modal-header {
+    @apply flex flex-row items-center p-4 bg-zinc-900 text-zinc-300 font-medium;
+}
+
+.modal-header i {
+    @apply flex justify-center text-base bg-slate-500 rounded-full h-fit w-6 font-semibold;
+}
+
+.modal-header p {
+    @apply flex-1;
+}
+
+.modal-body {
+    @apply text-zinc-900 p-5;
+}
+
+.modal-footer {
+    @apply flex justify-center mb-2;
+}
+
+.modal-footer button {
+    @apply min-h-10 min-w-28 rounded-md text-base font-medium bg-zinc-900 hover:bg-zinc-800;
+}

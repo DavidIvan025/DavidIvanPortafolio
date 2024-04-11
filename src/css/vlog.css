@@ -1,6 +1,66 @@
-@import url("https://cdnjs.cloudflare.com/ajax/libs/fork-awesome/1.2.0/css/fork-awesome.min.css");
+/* @import url("https://cdnjs.cloudflare.com/ajax/libs/fork-awesome/1.2.0/css/fork-awesome.min.css");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+    .m-container {
+        @apply flex flex-col text-sm mb-12;
+    }
+
+    .banner img {
+        width: 316px;
+        height: 130.34px;
+    }
+
+    .content {
+        @apply text-justify px-10 py-4;
+        height: 22em;
+        overflow: scroll;
+        overflow-x: hidden;
+        border-top: rgba(131, 104, 110, 1.00) 2px dotted;
+        border-bottom: rgba(131, 104, 110, 1.00) 2px dotted;
+    }
+
+    .page {
+        @apply font-normal py-2;
+        border-bottom: rgba(105, 105, 105, 1.00) 1px dotted;
+    }
+
+    .f-banners {
+        @apply mb-4 mx-2;
+    }
+
+    .info-inner{
+        position: relative;
+        margin: auto;
+        overflow: hidden;
+        float: none;
+    }
+
+    .info-inner-pv{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+    }
+
+    footer {
+        @apply p-10;
+        background-color: rgba(69, 58, 93, 1.00);
+    }
+
+     all sheets can be readen 
+    .icon {
+        @apply mx-1 w-14 h-14 bg-gray-600 text-white;
+    }
+
+    i.fa {
+        @apply text-3xl;
+    }
+
+    .sm-container {
+        @apply flex justify-center mx-2 mb-8 mt-8;
+    }
+} */

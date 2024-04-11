@@ -1,21 +1,98 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/fork-awesome/1.2.0/css/fork-awesome.min.css");
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Header Section */
+@layer base {
+    body {
+        font-family: system-ui;
+        @apply text-xl md:text-lg text-white bg-zinc-800;
+    }
 
-/* Footer Section */
-@layer components{
- .footer-top{
-    @apply min-h-screen p-8;
- }
+    input,
+    textarea {
+        @apply bg-[#1f2937] rounded-sm p-3 hover:ring-1 focus:caret-red-600 hover:ring-white hover:ring-offset-1;
+        resize: none;
+    }
 
- .footer-icons {
-   @apply mx-1 w-12 h-12 text-black flex shrink-0;
- }
- i.fa {
-   @apply text-2xl;
- }
+
+    header,
+    footer {
+        @apply bg-[rgba(17,17,17,255)];
+    }
+}
+
+@layer components {
+    .icon {
+        @apply mx-1 w-14 h-14 bg-zinc-900 text-white;
+    }
+
+    li.nav-txt::after {
+        @apply absolute hidden hover:block font-semibold text-lg translate-x-4 -translate-y-4 content-['...'];
+
+    }
+
+    li.nav-txt:hover {
+        @apply duration-500 transition-all text-red-600;
+    }
+
+    i.fa {
+        @apply text-3xl;
+    }
+
+    i.fa-send {
+        @apply text-sm;
+    }
+
+    .cards {
+        @apply flex flex-col bg-zinc-900 bg-opacity-90 rounded-md drop-shadow-lg p-8 flex-wrap min-w-[16rem] max-w-[18rem];
+    }
+
+    .cards>.icon {
+        @apply bg-transparent text-red-500;
+    }
+
+    .cards:has(figure) {
+        @apply p-0;
+    }
+
+    figcaption {
+        @apply bg-gray-800 bg-opacity-60 text-white;
+        opacity: 0;
+        transition: all .2s ease-in-out;
+    }
+
+    .folios {
+        @apply mx-auto my-16 text-center p-6 space-y-2 min-w-[16rem] max-w-[18rem] overflow-hidden;
+    }
+
+    .folios button {
+        @apply bg-zinc-900 shadow-md hover:bg-zinc-800 text-zinc-300 text-sm font-medium rounded-md w-28 h-7;
+    }
+
+    figcaption:hover {
+        opacity: 1;
+        transition: all .2s ease-in-out;
+    }
+
+    /*Blur on hover the folio card: img.img-blur{
+        @apply blur-md;
+    } */
+
+    .contact {
+        @apply bg-zinc-900 text-zinc-300 rounded-md drop-shadow-md flex flex-col justify-evenly items-center min-w-[16rem] max-w-[auto] min-h-[8rem];
+    }
+
+    .contact i {
+        @apply text-red-500
+    }
+
+    .error {
+      @apply opacity-15 text-[9em] @md:text-[18em] @md:mb-9 text-red-500 translate-y-3 -z-10  mx-auto;
+    }
+
+    .bg-text{
+        @apply bg-gradient-to-t from-zinc-800 h-28
+    }
+
 }
