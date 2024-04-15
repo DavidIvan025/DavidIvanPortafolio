@@ -1,17 +1,24 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import Modal from '../components/Modal';
 
 export default function EmailForm() {
-    
+    const [modalText, setModalText] = useState(null);
+    const [openModal, setOpenModal] = useState(false);
     const modalTextSuccess = (<p>
         Your message was sent successfully to me. In moments I'll contact you.
     </p>);
     const modalTextError = (<p>
         There was an error... try again later.
     </p>);
-
     const form = useRef();
+
+    const bodyText = () => {
+        setModalText(!modalText ? modalTextSuccess : modalText ? modalTextError : "");
+    }
+    const toggleModal = () => {
+        setOpenModal(!openModal)
+    }
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -22,19 +29,22 @@ export default function EmailForm() {
             })
             .then(
                 () => {
-                    <Modal modalSuccess={modalTextSuccess} />
-                    console.log('Message Sent!');
-                    e.target.reset();
+                    alert('Success! Message sent.');
+                    console.log('success');
                 },
                 (error) => {
-                    <Modal modalError={modalTextError} />
-                    console.log('Error...', error.text);
+                    alert('There was an error... Try again later.');
+                    console.log('ERROR:', error.text)
                 },
             );
+        e.target.reset();
     };
 
     return (
         <>
+            {/* {openModal && (
+                <Modal modalMessage={bodyText} />
+            )} */}
             <form ref={form} onSubmit={sendEmail} className='rounded-md bg-zinc-900 row-start-5 row-end-5 col-span-2 md:col-span-2 md:row-start-1 md:row-end-5'>
                 <div className='text-sm grid md:grid-cols-1 md:grid-rows-[repeat(4,3rem),9rem] lg:grid-cols-2 lg:grid-rows-[repeat(2,3rem),15rem] gap-y-8 lg:gap-6 p-6'>
                     <input id='name' name='user_name' type='text' placeholder='Name'></input>

@@ -1,5 +1,7 @@
+import { Link } from 'react-router-dom';
 import Header from '../components/Header'
 import Footer from '../components/Footer';
+
 import '../css/main.css';
 
 export default function Error404() {
@@ -21,7 +23,9 @@ export default function Error404() {
                 <div className='text-center mt-6'>
                     <p className='@md:text-2xl'>This page doesn't exist or was removed!</p>
                     <p className='@md:text-2xl'>We suggest you back to home</p>
-                    <a href='DavidIvanPortafolio/home'><button className='rounded-md h-9 min-w-40 mt-6 text-black text-sm bg-white hover:bg-gray-200'>Back to Home</button></a>
+                    <Link to='/'>
+                        <button className='rounded-md h-9 min-w-40 mt-6 text-black text-sm bg-white hover:bg-gray-200' >Back to Home</button>
+                    </Link>
                 </div>
             </div>
             <Footer />

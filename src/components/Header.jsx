@@ -3,14 +3,14 @@ export default function Header() {
         <>
             <header className='flex flex-row justify-evenly items-center p-4 sticky'>
                 <div className='w-36 h-26'>
-                    <img className='object-cover inline flex-none' src='img/footer-logo.png' />
+                    <img className='object-cover inline flex-none' draggable='false' src='img/footer-logo.png' />
                 </div>
                 <div>
                     <ul className='flex flex-row space-x-4 text-sm'>
-                        <li className='nav-txt cursor-pointer'><a rel='noopener' href='#home'>Home</a></li>
-                        <li className='nav-txt cursor-pointer'><a rel='noopener' href='#services'>Services</a></li>
-                        <li className='nav-txt cursor-pointer'><a rel='noopener' href='#portafolio'>Portafolio</a></li>
-                        <li className='nav-txt cursor-pointer'><a rel='noopener' href='#contact'>Contact</a></li>
+                        <a rel='noopener' href='#home'><li className='nav-txt cursor-pointer'>Home</li></a>
+                        <a rel='noopener' href='#services'><li className='nav-txt cursor-pointer'>Services</li></a>
+                        <a rel='noopener' href='#portafolio'><li className='nav-txt cursor-pointer'>Portafolio</li></a>
+                        <a rel='noopener' href='#contact'><li className='nav-txt cursor-pointer'>Contact</li></a>
                     </ul>
                 </div>
 

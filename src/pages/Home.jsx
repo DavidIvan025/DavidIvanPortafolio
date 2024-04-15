@@ -89,24 +89,24 @@ export default function Portafolio() {
                 <p id='portafolio' className='text-sm text-red-500'>MY PORTAFOLIO</p>
                 <p className='text-2xl'>Recent Works</p>
                 <div className='mt-8 grid grid-flow-row gap-6 md:grid-cols-2 lg:grid-cols-3'>
-                    <div className='grid grid-cols-2 cursor-pointer'>
-                        <figure className='grid'>
-                            <div className='img-blur relative grid col-start-1 col-end-2 row-start-1 row-end-2 items-center overflow-hidden'>
+                    <div className='grid grid-cols-2'>
+                        <figure className='grid cursor-pointer'>
+                            <div className='relative grid col-start-1 col-end-2 row-start-1 row-end-2 items-center overflow-hidden'>
                                 <img className='object-cover absolute scale-[2] -z-10' src='https://fastly.picsum.photos/id/9/5000/3269.jpg?hmac=cZKbaLeduq7rNB8X-bigYO8bvPIWtT-mh8GRXtU3vPc' alt='1' />
                             </div>
                             <figcaption className='col-start-1 col-end-2 row-start-1 row-end-2 justify-evenly'>
                                 <div className='folios'>
                                     <p className='font-medium'>Product Shopping Cart</p>
                                     <p className='line-clamp-2'>This is a design of a shopping cart product page.</p>
-                                    <button>See more</button>
+                                    <a target='_blank' href='https://66178d75e4aa37521b0ae7c1--dynamic-dieffenbachia-ce25c6.netlify.app'><button>See more</button></a>
                                 </div>
                             </figcaption>
                         </figure>
                     </div>
-                    <div className='grid grid-cols-2 cursor-pointer'>
-                        <figure className='grid'>
+                    <div className='grid grid-cols-2'>
+                        <figure className='grid cursor-pointer'>
                             <div className='relative grid col-start-1 col-end-2 row-start-1 row-end-2 items-center overflow-hidden'>
-                                <img className='img-blur object-cover absolute scale-[2] -z-10' src='https://fastly.picsum.photos/id/42/3456/2304.jpg?hmac=dhQvd1Qp19zg26MEwYMnfz34eLnGv8meGk_lFNAJR3g' alt='2' />
+                                <img className='object-cover absolute scale-[2] -z-10' src='https://fastly.picsum.photos/id/42/3456/2304.jpg?hmac=dhQvd1Qp19zg26MEwYMnfz34eLnGv8meGk_lFNAJR3g' alt='2' />
                             </div>
                             <figcaption className='col-start-1 col-end-2 row-start-1 row-end-2 justify-evenly'>
                                 <div className='folios'>
@@ -117,10 +117,10 @@ export default function Portafolio() {
                             </figcaption>
                         </figure>
                     </div>
-                    <div className='grid grid-cols-2 cursor-pointer'>
-                        <figure className='grid'>
+                    <div className='grid grid-cols-2'>
+                        <figure className='grid cursor-pointer'>
                             <div className='relative grid col-start-1 col-end-2 row-start-1 row-end-2 items-center overflow-hidden'>
-                                <img className='img-blur object-cover absolute scale-[2] -z-10' src='https://fastly.picsum.photos/id/48/5000/3333.jpg?hmac=y3_1VDNbhii0vM_FN6wxMlvK27vFefflbUSH06z98so' alt='3' />
+                                <img className='object-cover absolute scale-[2] -z-10' src='https://fastly.picsum.photos/id/48/5000/3333.jpg?hmac=y3_1VDNbhii0vM_FN6wxMlvK27vFefflbUSH06z98so' alt='3' />
                             </div>
                             <figcaption className='col-start-1 col-end-2 row-start-1 row-end-2 justify-evenly'>
                                 <div className='folios'>

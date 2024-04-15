@@ -1,11 +1,18 @@
 import { useState } from 'react';
 import '../css/modal.css';
 
-export default function Modal({ modalSuccess, modalError }) {
-    const [error,setActive] = useState(false);
-    const content = () => {
-        setActive(!error);
-    };
+export default function Modal({ modalMessage }) {
+    const [modal, setModal] = useState(false);
+
+    const toggleModal = () => {
+        setModal(!modal)
+    }
+
+    if (modal) {
+        document.body.classList.add('active-modal');
+    } else {
+        document.body.classList.remove('active-modal');
+    }
 
     return (
         <>
@@ -13,14 +20,15 @@ export default function Modal({ modalSuccess, modalError }) {
                 <div className="grid grid-cols-1 grid-rows-[4rem,1fr,auto] grid-flow-col">
                     <div className="modal-header">
                         <p>Message</p>
-                        <i className="fa fa-times" aria-hidden="true"></i>
+                        <a onClick={toggleModal}>
+                            <i className="fa fa-times" aria-hidden="true"></i>
+                        </a>
                     </div>
-                    <div className={`${!error ? modalSuccess :  error ? modalError : ""}  ${'modal-body'}`} >
-                        {content}
+                    <div className='modal-body'>
+                        {modalMessage}
                     </div>
                     <div className="modal-footer">
-                        <button>Confirm</button>
-
+                        <button onClick={toggleModal}>Confirm</button>
                     </div>
                 </div>
 
