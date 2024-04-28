@@ -9,7 +9,7 @@ export default function Header() {
                     <ul className='flex flex-row space-x-4 text-sm'>
                         <a rel='noopener' href='#home'><li className='nav-txt cursor-pointer'>Home</li></a>
                         <a rel='noopener' href='#services'><li className='nav-txt cursor-pointer'>Services</li></a>
-                        <a rel='noopener' href='#portafolio'><li className='nav-txt cursor-pointer'>Portafolio</li></a>
+                        <a rel='noopener' href='#portfolio'><li className='nav-txt cursor-pointer'>Portfolio</li></a>
                         <a rel='noopener' href='#contact'><li className='nav-txt cursor-pointer'>Contact</li></a>
                     </ul>
                 </div>

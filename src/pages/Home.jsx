@@ -86,7 +86,7 @@ export default function Portafolio() {
 
             </div>
             <div className='border-b-2 border-b-zinc-900 p-12 md:p-24 h-full'>
-                <p id='portafolio' className='text-sm text-red-500'>MY PORTAFOLIO</p>
+                <p id='portfolio' className='text-sm text-red-500'>MY PORTFOLIO</p>
                 <p className='text-2xl'>Recent Works</p>
                 <div className='mt-8 grid grid-flow-row gap-6 md:grid-cols-2 lg:grid-cols-3'>
                     <div className='grid grid-cols-2'>
@@ -98,7 +98,7 @@ export default function Portafolio() {
                                 <div className='folios'>
                                     <p className='font-medium'>Product Shopping Cart</p>
                                     <p className='line-clamp-2'>This is a design of a shopping cart product page.</p>
-                                    <a target='_blank' href='https://66178d75e4aa37521b0ae7c1--dynamic-dieffenbachia-ce25c6.netlify.app'><button>See more</button></a>
+                                    <a target='_blank' href='https://661dbd64b9d785502a0b7207--dynamic-dieffenbachia-ce25c6.netlify.app'><button>See more</button></a>
                                 </div>
                             </figcaption>
                         </figure>
@@ -147,7 +147,7 @@ export default function Portafolio() {
                     </div>
                     <div className='contact row-start-2 row-end-2 col-span-2 md:col-start-1 md:row-start-2'>
                         <i className='fa fa-phone'></i>
-                        <p className='text-sm'> +52 656-131-9227</p>
+                        <p className='text-sm'> +52 656-587-0686</p>
                     </div>
                     <div className='contact row-start-3 row-end-3 col-span-2 md:col-start-1 md:row-start-3'>
                         <i className='fa fa-email-bulk'></i>

@@ -1,13 +1,9 @@
-body.active-modal {
-    @apply overflow-y-hidden;
-}
-
 .modal-header {
     @apply flex flex-row items-center p-4 bg-zinc-900 text-zinc-300 font-medium;
 }
 
 .modal-header i {
-    @apply flex justify-center text-base bg-slate-500 rounded-full h-fit w-6 font-semibold;
+    @apply flex justify-center text-base bg-slate-500 hover:bg-slate-500/60 rounded-full h-fit w-6 font-semibold cursor-pointer;
 }
 
 .modal-header p {
